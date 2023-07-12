@@ -24,13 +24,15 @@ function App() {
         <input
           type="text"
           placeholder="Enter Name..."
+          value={name}
           onChange={(event) => {
             setName(event.target.value);
           }}
         />
         <input
-          type="text" className="ms-2"
+          type="email" className="ms-2"
           placeholder="Enter Email..."
+          value={email}
           onChange={(event) => {
             setEmail(event.target.value);
           }}
@@ -96,9 +98,6 @@ function App() {
               </tr>
             );
           })}
-
-
-
         </tbody>
         </table>
        
