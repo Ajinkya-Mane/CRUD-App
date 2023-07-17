@@ -15,7 +15,7 @@ export const userSlice = createSlice({
     },
 
     updateUsername: (state, action) => {
-      state.value.map((user) => {
+      state.value.forEach((user) => {
         if (user.id === action.payload.id) {
           user.name = action.payload.name;
         }
